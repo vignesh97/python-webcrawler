@@ -8,6 +8,7 @@ import requests
 start_url = "https://en.wikipedia.org/wiki/Special:Random"
 target_url = "https://en.wikipedia.org/wiki/Chemistry"
 
+
 def find_first_link(url):
     response = requests.get(url)
     html = response.text
