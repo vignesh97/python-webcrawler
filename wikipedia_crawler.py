@@ -13,7 +13,7 @@ def find_first_link(url):
     response = requests.get(url)
     html = response.text
     soup = bs4.BeautifulSoup(html, "html.parser")
-
+    # Jsoup library
     # This div contains the article's body
     # (June 2017 Note: Body nested in two div tags)
     content_div = soup.find(id="mw-content-text").find(class_="mw-parser-output")
